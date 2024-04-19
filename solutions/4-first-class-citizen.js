@@ -1,3 +1,9 @@
+const takeLast = (text, n) => {
+  if (text === '' || text.length < n) {
+      return null;
+  }
+  return text.slice(-n).split('').reverse().join('');
+};
 const run = (text) => {
     // BEGIN
 
